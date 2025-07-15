@@ -1,3 +1,5 @@
+package thread;
+
 public class ThreadLifecycle {
     public static void main(String[] args) throws InterruptedException{
         Thread thread = new Thread(()->{

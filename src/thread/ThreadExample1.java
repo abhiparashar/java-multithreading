@@ -1,3 +1,5 @@
+package thread;
+
 //Method 1: Extending Thread Class
 class MyThread extends Thread{
    private final String taskName;

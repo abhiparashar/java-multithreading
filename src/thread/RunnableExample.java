@@ -1,3 +1,5 @@
+package thread;
+
 class MyRunnableThread implements Runnable{
     private final String taskName;
 
