@@ -1,3 +1,5 @@
+package thread;
+
 class MyThread extends Thread{
     @Override
     public void run() {

@@ -56,10 +56,10 @@ public class MultiThreaded {
 
 ### Method 1: Extending Thread Class
 ```java
-class thread.MyThread extends Thread {
+class thread.thread.MyThread extends Thread {
     private String taskName;
     
-    public thread.MyThread(String taskName) {
+    public thread.thread.MyThread(String taskName) {
         this.taskName = taskName;
     }
     
@@ -78,8 +78,8 @@ class thread.MyThread extends Thread {
 
 public class thread.ThreadExample1 {
     public static void main(String[] args) {
-        thread.MyThread thread1 = new thread.MyThread("Task-A");
-        thread.MyThread thread2 = new thread.MyThread("Task-B");
+        thread.thread.MyThread thread1 = new thread.thread.MyThread("Task-A");
+        thread.thread.MyThread thread2 = new thread.thread.MyThread("Task-B");
         
         thread1.start(); // Don't call run() directly!
         thread2.start();
@@ -110,7 +110,7 @@ class MyTask implements Runnable {
     }
 }
 
-public class thread.RunnableExample {
+public class thread.thread.RunnableExample {
     public static void main(String[] args) {
         Thread thread1 = new Thread(new MyTask("Download"));
         Thread thread2 = new Thread(new MyTask("Upload"));
@@ -2655,7 +2655,7 @@ public class ProcessVsThread {
 **Answer:**
 ```java
 // Method 1: Extending Thread class
-class thread.MyThread extends Thread {
+class thread.thread.MyThread extends Thread {
     public void run() {
         System.out.println("Method 1: " + Thread.currentThread().getName());
     }
@@ -2678,7 +2678,7 @@ class MyCallable implements Callable<String> {
 public class ThreadCreationMethods {
     public static void main(String[] args) throws Exception {
         // Method 1
-        new thread.MyThread().start();
+        new thread.thread.MyThread().start();
         
         // Method 2
         new Thread(new MyRunnable()).start();

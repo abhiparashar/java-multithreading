@@ -1,3 +1,5 @@
+package thread;
+
 class RunnableExample implements Runnable{
 
     @Override
